@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "outDir": "./dist",
+    "rootDir": ".",
+    "module": "commonjs",
+    "downlevelIteration": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    // プロジェクト参照の参照元は以下の2行を設定する
+    "baseUrl": ".",
+    "allowJs": true,
+    // エイリアスの設定を相対パスで指定
+    "paths": {
+      "@common-entity/*": ["../common-entity/dist/*"],
+      "@src/*": ["src/*"]
+    }
+  },
+  // "include": ["./src/**/*"],
+  // "exclude": ["node_modules", "**/*.test.ts"],
+  "include": ["./src/**/*", "./test/**/*"],
+  "exclude": ["node_modules"],
+  // 参照先のプロジェクトを相対パスで指定する
+  "references": [
+    {
+      "path": "../common-entity"
+    }
+  ]
+}

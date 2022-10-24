@@ -1,0 +1,40 @@
+{
+  "name": "reference-proj",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "webpack",
+    "test": "jest"
+  },
+  "author": "fnya",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.19.6",
+    "@babel/preset-env": "^7.19.4",
+    "@babel/preset-typescript": "^7.18.6",
+    "@types/jest": "^29.2.0",
+    "@typescript-eslint/eslint-plugin": "^5.40.1",
+    "babel-jest": "^29.2.1",
+    "babel-loader": "^8.2.5",
+    "eslint": "^8.26.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^27.1.3",
+    "eslint-plugin-n": "^15.3.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "jest": "^29.2.1",
+    "prettier": "^2.7.1",
+    "ts-jest": "^29.0.3",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  },
+  "dependencies": {
+    "node-polyfill-webpack-plugin": "^2.0.1",
+    "tsconfig-paths-webpack-plugin": "^4.0.0"
+  }
+}
